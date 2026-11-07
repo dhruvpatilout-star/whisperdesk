@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>WhisperDesk — A/B Study</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 640px; margin: 60px auto; padding: 0 20px; }
+  button { font-size: 1.1rem; padding: 10px 24px; border-radius: 8px; border: none; cursor: pointer; }
+  #record { background: #2563eb; color: white; }
+  #record.recording { background: #dc2626; }
+  #card { margin-top: 24px; padding: 16px; border: 1px solid #ddd; border-radius: 10px; min-height: 80px; white-space: pre-wrap; }
+  #status { color: #666; font-size: 0.9rem; margin-top: 8px; }
+</style>
+</head>
+<body>
+  <h2 id="title">WhisperDesk</h2>
+  <p id="instructions"></p>
+  <button id="record">Start Recording</button>
+  <div id="status"></div>
+  <div id="card"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

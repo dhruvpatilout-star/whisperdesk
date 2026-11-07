@@ -1,4 +1,5 @@
 faster-whisper
+av==18.1.0
 jiwer
 psutil
 flask
