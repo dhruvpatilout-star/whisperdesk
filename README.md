@@ -47,9 +47,11 @@ pip install -r requirements.txt
 
 | Metric | Approach A (tiny.en) | Approach B (base.en) | Approach C (small.en) |
 |---|---|---|---|
-| P95 Latency (RTF) | _measured_ | _measured_ | _measured_ |
-| Avg WER (%) | _measured_ | _measured_ | _measured_ |
-| Peak RAM (MB) | _measured_ | _measured_ | _measured_ |
+| P95 Latency (RTF) | 0.140 | 0.195 | 0.637 |
+| Avg WER (%) | 17.06 | 15.01 | 14.39 |
+| Peak RAM (MB) | 22.0 | 15.4 | 15.4 |
+
+**Conclusion:** base.en offers the best practical trade-off for consumer hardware. Moving from tiny.en to base.en cuts word error rate by roughly 2 percentage points while still running well within the real-time target (RTF 0.195, versus the <0.3 goal). Moving further to small.en only shaves another 0.6 points off WER, at more than 3x the latency — a poor trade for a local, responsiveness-sensitive tool. Note: the RAM figures above are measured via Python-level `tracemalloc` and likely understate true memory use, since the core transcription engine runs in a native (non-Python) library that this method can't fully see — a more accurate measurement would need a process-level tool like `psutil`'s RSS tracking instead.
 
 **Conclusion:** _(fill in — one paragraph on why one approach is the sweet spot)_
 

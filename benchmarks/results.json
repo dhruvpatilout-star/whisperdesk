@@ -1,0 +1,272 @@
+{
+  "A_tiny.en": {
+    "model_size": "tiny.en",
+    "samples": [
+      {
+        "file": "sample1.wav",
+        "predicted": "Please schedule a follow up meeting with the client for next Tuesday afternoon and send the update contract draft by the email before then.",
+        "ground_truth": "Please schedule a follow-up meeting with the client for next Tuesday afternoon and send the updated contract draft by email before then.",
+        "rtf": 0.15493556981763643,
+        "wer": 0.18181818181818182,
+        "peak_mem_mb": 22.004459381103516
+      },
+      {
+        "file": "sample2.wav",
+        "predicted": "The quarterly report should be finalized by Friday so the team can review it before the Monday's presentation.",
+        "ground_truth": "The quarterly report should be finalized by Friday so the team can review it before the Monday presentation.",
+        "rtf": 0.09818234011600561,
+        "wer": 0.05555555555555555,
+        "peak_mem_mb": 8.605522155761719
+      },
+      {
+        "file": "sample3.wav",
+        "predicted": "Visual book the flight tickets soon because the price tend to increase closer to the travel dates.",
+        "ground_truth": "We should book the flight tickets soon because the prices tend to increase closer to the travel dates.",
+        "rtf": 0.08458954084704594,
+        "wer": 0.16666666666666666,
+        "peak_mem_mb": 10.248382568359375
+      },
+      {
+        "file": "sample4.wav",
+        "predicted": "Hurry up, we need to live in the far minutes or we will miss the train to the city centre.",
+        "ground_truth": "Hurry up, we need to leave in five minutes or we'll miss the train to the city center.",
+        "rtf": 0.13961502403927314,
+        "wer": 0.3333333333333333,
+        "peak_mem_mb": 6.0783538818359375
+      },
+      {
+        "file": "sample5.wav",
+        "predicted": "Line move up to tomorrow. So everyone need to submit their section by tonight without fail.",
+        "ground_truth": "The deadline moved up to tomorrow, so everyone needs to submit their sections by tonight without fail.",
+        "rtf": 0.10037382286242083,
+        "wer": 0.4117647058823529,
+        "peak_mem_mb": 8.36566162109375
+      },
+      {
+        "file": "sample6.wav",
+        "predicted": "The new office space has better lightening but the air conditioning makes a constant humming sound all day.",
+        "ground_truth": "The new office space has better lighting, but the air conditioning makes a constant humming sound all day.",
+        "rtf": 0.0960926494806232,
+        "wer": 0.05555555555555555,
+        "peak_mem_mb": 8.428657531738281
+      },
+      {
+        "file": "sample7.wav",
+        "predicted": "The traffic outside is heavier than a U3 today because of the ongoing construction work nearby the main road.",
+        "ground_truth": "Traffic outside is heavier than usual today because of the ongoing construction work near the main road.",
+        "rtf": 0.08325395281461181,
+        "wer": 0.29411764705882354,
+        "peak_mem_mb": 10.071517944335938
+      },
+      {
+        "file": "sample8.wav",
+        "predicted": "Please make sure the final invoice includes correct tax amount before you send it to the client.",
+        "ground_truth": "Please make sure the final invoice includes the correct tax amount before you send it to the client.",
+        "rtf": 0.06427271302583275,
+        "wer": 0.05555555555555555,
+        "peak_mem_mb": 13.045433044433594
+      },
+      {
+        "file": "sample9.wav",
+        "predicted": "Write down each step of the process so that anyone on the team can follow it later.",
+        "ground_truth": "Write down each step of the process so that anyone on the team can follow it later.",
+        "rtf": 0.06999609302460308,
+        "wer": 0.0,
+        "peak_mem_mb": 11.849319458007812
+      },
+      {
+        "file": "sample10.wav",
+        "predicted": "I want to be very clear about the deadline. It is this Friday evening and not next Monday. So please make sure everyone on the team is aware and plan their work accordingly.",
+        "ground_truth": "I want to be very clear about the deadline, it is this Friday evening and not next Monday, so please make sure everyone on the team is aware and plans their work accordingly.",
+        "rtf": 0.06295732697289749,
+        "wer": 0.15151515151515152,
+        "peak_mem_mb": 15.416580200195312
+      }
+    ],
+    "summary": {
+      "p95_latency_rtf": 0.14,
+      "avg_wer_pct": 17.06,
+      "peak_ram_mb": 22.0
+    }
+  },
+  "B_base.en": {
+    "model_size": "base.en",
+    "samples": [
+      {
+        "file": "sample1.wav",
+        "predicted": "Please schedule a follow-up meeting with the client for next Tuesday afternoon and send the update contract draft by the email before then.",
+        "ground_truth": "Please schedule a follow-up meeting with the client for next Tuesday afternoon and send the updated contract draft by email before then.",
+        "rtf": 0.15423835361468133,
+        "wer": 0.09090909090909091,
+        "peak_mem_mb": 10.921770095825195
+      },
+      {
+        "file": "sample2.wav",
+        "predicted": "The quarterly report should be finalized by Friday, so the team can review it before the Monday's presentation.",
+        "ground_truth": "The quarterly report should be finalized by Friday so the team can review it before the Monday presentation.",
+        "rtf": 0.19508802083321847,
+        "wer": 0.1111111111111111,
+        "peak_mem_mb": 8.605522155761719
+      },
+      {
+        "file": "sample3.wav",
+        "predicted": "We should book the flight tickets soon because the price tends to increase closer to the travel dates.",
+        "ground_truth": "We should book the flight tickets soon because the prices tend to increase closer to the travel dates.",
+        "rtf": 0.1555297511995915,
+        "wer": 0.1111111111111111,
+        "peak_mem_mb": 10.248382568359375
+      },
+      {
+        "file": "sample4.wav",
+        "predicted": "Hurry up, we need to live in the farm minutes or we will miss the train to the city center.",
+        "ground_truth": "Hurry up, we need to leave in five minutes or we'll miss the train to the city center.",
+        "rtf": 0.27591442307646624,
+        "wer": 0.2777777777777778,
+        "peak_mem_mb": 6.0783538818359375
+      },
+      {
+        "file": "sample5.wav",
+        "predicted": "I will now move up to tomorrow. So everyone needs to submit their section by tonight without fail.",
+        "ground_truth": "The deadline moved up to tomorrow, so everyone needs to submit their sections by tonight without fail.",
+        "rtf": 0.189308158733069,
+        "wer": 0.4117647058823529,
+        "peak_mem_mb": 8.36566162109375
+      },
+      {
+        "file": "sample6.wav",
+        "predicted": "The new office space has better lighting but the air conditioning makes a constant humming sound all day.",
+        "ground_truth": "The new office space has better lighting, but the air conditioning makes a constant humming sound all day.",
+        "rtf": 0.1919217222585355,
+        "wer": 0.05555555555555555,
+        "peak_mem_mb": 8.428657531738281
+      },
+      {
+        "file": "sample7.wav",
+        "predicted": "The traffic outside is heavier than usual today because of the ongoing construction work nearby the main road.",
+        "ground_truth": "Traffic outside is heavier than usual today because of the ongoing construction work near the main road.",
+        "rtf": 0.15320797806317382,
+        "wer": 0.17647058823529413,
+        "peak_mem_mb": 10.071517944335938
+      },
+      {
+        "file": "sample8.wav",
+        "predicted": "Please make sure the final invoice includes correct tax amount before you send it to the client.",
+        "ground_truth": "Please make sure the final invoice includes the correct tax amount before you send it to the client.",
+        "rtf": 0.12433117092457022,
+        "wer": 0.05555555555555555,
+        "peak_mem_mb": 13.045433044433594
+      },
+      {
+        "file": "sample9.wav",
+        "predicted": "write down each step of the process so that anyone on the team can follow it later.",
+        "ground_truth": "Write down each step of the process so that anyone on the team can follow it later.",
+        "rtf": 0.1366970466829837,
+        "wer": 0.058823529411764705,
+        "peak_mem_mb": 11.849319458007812
+      },
+      {
+        "file": "sample10.wav",
+        "predicted": "I want to be very clear about the deadline. It is this Friday evening and not next Monday. So please make sure everyone on the team is aware and plan their work accordingly.",
+        "ground_truth": "I want to be very clear about the deadline, it is this Friday evening and not next Monday, so please make sure everyone on the team is aware and plans their work accordingly.",
+        "rtf": 0.11791940899585278,
+        "wer": 0.15151515151515152,
+        "peak_mem_mb": 15.416580200195312
+      }
+    ],
+    "summary": {
+      "p95_latency_rtf": 0.195,
+      "avg_wer_pct": 15.01,
+      "peak_ram_mb": 15.4
+    }
+  },
+  "C_small.en": {
+    "model_size": "small.en",
+    "samples": [
+      {
+        "file": "sample1.wav",
+        "predicted": "Please schedule a follow-up meeting with the client for next Tuesday afternoon and send the update contract draft by the email before then.",
+        "ground_truth": "Please schedule a follow-up meeting with the client for next Tuesday afternoon and send the updated contract draft by email before then.",
+        "rtf": 0.5215818167624844,
+        "wer": 0.09090909090909091,
+        "peak_mem_mb": 11.219486236572266
+      },
+      {
+        "file": "sample2.wav",
+        "predicted": "The quarterly report should be finalized by Friday so the team can review it before Monday's presentation.",
+        "ground_truth": "The quarterly report should be finalized by Friday so the team can review it before the Monday presentation.",
+        "rtf": 0.6368221778098081,
+        "wer": 0.1111111111111111,
+        "peak_mem_mb": 8.605522155761719
+      },
+      {
+        "file": "sample3.wav",
+        "predicted": "We should book the flight tickets soon because the price tends to increase closer to the travel dates.",
+        "ground_truth": "We should book the flight tickets soon because the prices tend to increase closer to the travel dates.",
+        "rtf": 0.5177926395726993,
+        "wer": 0.1111111111111111,
+        "peak_mem_mb": 10.248382568359375
+      },
+      {
+        "file": "sample4.wav",
+        "predicted": "Hurry up, we need to live in the 5 minutes or we will miss the train to the city centre.",
+        "ground_truth": "Hurry up, we need to leave in five minutes or we'll miss the train to the city center.",
+        "rtf": 0.8783641655209866,
+        "wer": 0.3333333333333333,
+        "peak_mem_mb": 6.0783538818359375
+      },
+      {
+        "file": "sample5.wav",
+        "predicted": "line move up to tomorrow. So everyone needs to submit their section by tonight without fail.",
+        "ground_truth": "The deadline moved up to tomorrow, so everyone needs to submit their sections by tonight without fail.",
+        "rtf": 0.5947065146753523,
+        "wer": 0.35294117647058826,
+        "peak_mem_mb": 8.36566162109375
+      },
+      {
+        "file": "sample6.wav",
+        "predicted": "The new office space has better lightning but the air conditioning makes a constant humming sound all day.",
+        "ground_truth": "The new office space has better lighting, but the air conditioning makes a constant humming sound all day.",
+        "rtf": 0.6134112070494241,
+        "wer": 0.05555555555555555,
+        "peak_mem_mb": 8.428657531738281
+      },
+      {
+        "file": "sample7.wav",
+        "predicted": "The traffic outside is heavier than usual today because of the ongoing construction work nearby the main road.",
+        "ground_truth": "Traffic outside is heavier than usual today because of the ongoing construction work near the main road.",
+        "rtf": 0.5003991100999058,
+        "wer": 0.17647058823529413,
+        "peak_mem_mb": 10.071517944335938
+      },
+      {
+        "file": "sample8.wav",
+        "predicted": "Please make sure the final invoice includes correct tax amount before you send it to the client.",
+        "ground_truth": "Please make sure the final invoice includes the correct tax amount before you send it to the client.",
+        "rtf": 0.37531677605153796,
+        "wer": 0.05555555555555555,
+        "peak_mem_mb": 13.045433044433594
+      },
+      {
+        "file": "sample9.wav",
+        "predicted": "Write down each step of the process so that anyone on the team can follow it later.",
+        "ground_truth": "Write down each step of the process so that anyone on the team can follow it later.",
+        "rtf": 0.4128259702853658,
+        "wer": 0.0,
+        "peak_mem_mb": 11.849319458007812
+      },
+      {
+        "file": "sample10.wav",
+        "predicted": "I want to be very clear about the deadline. It is this Friday evening and not next Monday. So please make sure everyone on the team is aware and plan their work accordingly.",
+        "ground_truth": "I want to be very clear about the deadline, it is this Friday evening and not next Monday, so please make sure everyone on the team is aware and plans their work accordingly.",
+        "rtf": 0.36732751166197836,
+        "wer": 0.15151515151515152,
+        "peak_mem_mb": 15.416580200195312
+      }
+    ],
+    "summary": {
+      "p95_latency_rtf": 0.637,
+      "avg_wer_pct": 14.39,
+      "peak_ram_mb": 15.4
+    }
+  }
+}
