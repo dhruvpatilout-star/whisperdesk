@@ -72,21 +72,23 @@ pip install -r requirements.txt
 
 ## Architecture
 
+```
 ┌─────────────────┐      records audio       ┌──────────────────┐
-│  Browser Client │ ───────────────────────► │   Flask Server   │
-│ (index.html +   │                          │   (server.py)    │
-│    app.js)      │ ◄─────────────────────── │                  │
-└─────────────────┘      returns text        └─────────┬────────┘
-                                                       │ calls
-                                                       ▼
+│  Browser Client  │ ───────────────────────► │   Flask Server    │
+│ (index.html +    │                           │   (server.py)     │
+│    app.js)       │ ◄─────────────────────── │                    │
+└─────────────────┘      returns text         └─────────┬─────────┘
+                                                          │ calls
+                                                          ▼
                                                ┌────────────────────┐
-                                               │  transcriber.py    │
-                                               │  (faster-whisper   │
-                                               │  wrapper, base.en) │
+                                               │  transcriber.py     │
+                                               │  (faster-whisper     │
+                                               │   wrapper, base.en)  │
                                                └────────────────────┘
+```
 
 The same `transcriber.py` powers both the live app above and `benchmark.py` (Task 3), so the benchmark numbers and the live app's behavior are backed by identical code.
 
 ## License
 
-MIT — see `LICENSE`.
+MIT — see [LICENSE](LICENSE).
