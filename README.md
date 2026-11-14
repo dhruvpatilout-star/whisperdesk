@@ -53,8 +53,6 @@ pip install -r requirements.txt
 
 **Conclusion:** base.en offers the best practical trade-off for consumer hardware. Moving from tiny.en to base.en cuts word error rate by roughly 2 percentage points while still running well within the real-time target (RTF 0.195, versus the <0.3 goal). Moving further to small.en only shaves another 0.6 points off WER, at more than 3x the latency — a poor trade for a local, responsiveness-sensitive tool. Note: the RAM figures above are measured via Python-level `tracemalloc` and likely understate true memory use, since the core transcription engine runs in a native (non-Python) library that this method can't fully see — a more accurate measurement would need a process-level tool like `psutil`'s RSS tracking instead.
 
-**Conclusion:** _(fill in — one paragraph on why one approach is the sweet spot)_
-
 ## Task 2 — A/B user study
 
 1. Start the backend: `python server.py`
@@ -62,6 +60,32 @@ pip install -r requirements.txt
 3. Send 5 participants `http://localhost:8000?version=A` and 5 participants
    `http://localhost:8000?version=B`.
 4. Record results in `USER_STUDY.md` (template provided).
+
+## Task 2 — User Study Results (n=10)
+
+| Version | Avg. Completion Time (s) | Avg. Error Corrections | Avg. Responsiveness (1-5) | Avg. Comfort (1-5) |
+|---|---|---|---|---|
+| A (Live) | 9.24 | 0.8 | 3.6 | 4.0 |
+| B (Batched) | 11.98 | 0.6 | 4.1 | 4.5 |
+
+**Conclusion:** Version A (live) was faster to complete on average (9.24s vs. 11.98s), but Version B scored higher on both perceived responsiveness (4.1 vs. 3.6) and comfort (4.5 vs. 4.0). Error-correction counts were similar across both (0.8 vs. 0.6), suggesting Version A's speed advantage didn't come from participants making fewer mistakes. This is a genuine trade-off rather than one version being simply "better": Version A is objectively quicker, but its continuously updating text costs a small amount of perceived calm compared to Version B's single, stable reveal. Full per-participant data in `USER_STUDY.md`.
+
+## Architecture
+
+┌─────────────────┐      records audio       ┌──────────────────┐
+│  Browser Client │ ───────────────────────► │   Flask Server   │
+│ (index.html +   │                          │   (server.py)    │
+│    app.js)      │ ◄─────────────────────── │                  │
+└─────────────────┘      returns text        └─────────┬────────┘
+                                                       │ calls
+                                                       ▼
+                                               ┌────────────────────┐
+                                               │  transcriber.py    │
+                                               │  (faster-whisper   │
+                                               │  wrapper, base.en) │
+                                               └────────────────────┘
+
+The same `transcriber.py` powers both the live app above and `benchmark.py` (Task 3), so the benchmark numbers and the live app's behavior are backed by identical code.
 
 ## License
 
